@@ -17,6 +17,7 @@
 /protect_f        ext4     /dev/block/platform/bootdevice/by-name/protect1     flags=backup=1;display="Protect F"
 /protect_s        ext4     /dev/block/platform/bootdevice/by-name/protect2     flags=backup=1;display="Protect S"
 
+/metadata         ext4     /dev/block/platform/bootdevice/by-name/metadata     flags=backup=1;display="Metadata"
 /persist          ext4     /dev/block/platform/bootdevice/by-name/persist      flags=backup=1;display="Persist"
 /system_root      ext4     /dev/block/platform/bootdevice/by-name/system       flags=backup=1;display="System";wipeingui
 /vendor           ext4     /dev/block/platform/bootdevice/by-name/vendor       flags=backup=1;display="Vendor";wipeingui
