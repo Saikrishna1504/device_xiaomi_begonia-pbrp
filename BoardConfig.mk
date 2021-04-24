@@ -76,6 +76,9 @@ TARGET_KERNEL_CONFIG := begonia_defconfig
 # Platform
 TARGET_BOARD_PLATFORM := mt6785
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
