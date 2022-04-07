@@ -89,6 +89,7 @@ TW_INCLUDE_CRYPTO_FBE := true
 TW_USE_FSCRYPT_POLICY := 1
 
 # TWRP Configuration
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 RECOVERY_SDCARD_ON_DATA := true
 TW_THEME := portrait_hdpi
 TW_Y_OFFSET := 80
