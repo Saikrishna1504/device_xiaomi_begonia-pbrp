@@ -1,5 +1,8 @@
 import /microtrust_begonia.rc
 
+on early-init
+    start adbd
+
 on init
     # Create a more standard /dev/block layout for our scripts
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
