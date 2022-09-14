@@ -6,3 +6,7 @@
 #
 
 LOCAL_PATH := device/xiaomi/begonia
+
+# HACK: Set vendor patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.security_patch=2099-12-31
