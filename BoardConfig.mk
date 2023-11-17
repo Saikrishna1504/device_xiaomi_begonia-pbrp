@@ -124,6 +124,7 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_FRAMERATE := 60
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone4/temp
+TW_PREPARE_DATA_MEDIA_EARLY := true
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
