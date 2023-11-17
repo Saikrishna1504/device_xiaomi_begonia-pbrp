@@ -1,3 +1,5 @@
+ro.secure=0
+ro.debuggable=1
 ro.mediatek.platform=MT6785
 ro.hardware=mt6785
 ro.hardware.kmsetkey=beanpod

@@ -55,7 +55,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USES_MKE2FS := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive androidboot.usbconfigfs=true
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive androidboot.usbconfigfs=true androidboot.init_fatal_reboot_target=bootloader
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
@@ -73,6 +73,12 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+
+# Kernel Binary
+TARGET_KERNEL_VERSION := 4.14
+LOCAL_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6785
@@ -113,9 +119,11 @@ TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1024
 TW_EXCLUDE_APEX := true
 TW_INCLUDE_NTFS_3G := true
+TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_FRAMERATE := 60
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone4/temp
 
 # Debug flags
