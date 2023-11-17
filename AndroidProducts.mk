@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_begonia.mk
+    $(LOCAL_DIR)/omni_begonia.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_begonia-user \
-    twrp_begonia-userdebug \
-    twrp_begonia-eng
+    omni_begonia-user \
+    omni_begonia-userdebug \
+    omni_begonia-eng
