@@ -9,3 +9,4 @@ ro.mtk_microtrust_tee_support=1
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.product.device=begonia
 fbe.metadata.wrappedkey=true
+ro.fastbootd.available=true
