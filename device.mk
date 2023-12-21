@@ -29,3 +29,8 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
 
 PRODUCT_PACKAGES += \
     libshim_beanpod
+
+# Health Hal
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
