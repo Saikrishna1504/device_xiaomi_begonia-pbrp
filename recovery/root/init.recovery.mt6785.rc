@@ -54,3 +54,7 @@ on property:twrp.decrypt.done=true
     stop gatekeeper-1-0
     stop servicemanager
     stop hwservicemanager
+
+on early-fs
+    write /proc/bootprof "INIT:early-fs"
+    start vold
