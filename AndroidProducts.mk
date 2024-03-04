@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_begonia.mk
+    $(LOCAL_DIR)/pb_begonia.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_begonia-user \
-    omni_begonia-userdebug \
-    omni_begonia-eng
+    pb_begonia-user \
+    pb_begonia-userdebug \
+    pb_begonia-eng
